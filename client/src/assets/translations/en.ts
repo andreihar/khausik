@@ -48,7 +48,7 @@ export const en = {
       },
       convertNonCjk: "Convert non-Chinese characters",
       transliteration: {
-        label: "Select transliteration position",
+        label: "Transliteration position",
         ruby: "Above the character",
         bottom: "Below the text"
       }
@@ -102,7 +102,8 @@ export const en = {
       bg: "Bulgarian",
       ca: "Catalan",
       ceb: "Cebuano",
-      zh: "Mandarin",
+      "zh-TW": "Mandarin (Traditional)",
+      "zh-CN": "Mandarin (Simplified)",
       co: "Corsican",
       hr: "Croatian",
       cs: "Czech",

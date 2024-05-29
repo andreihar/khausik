@@ -6,8 +6,8 @@ converter = opencc.OpenCC('s2t.json')
 session = requests.Session()
 
 def translate(lang, input):
-    if lang == 'zh':
-        return get_taiwanese(converter.convert(input))
+    if lang == 'zh-TW':
+        return get_taiwanese(input)
     else:
         return get_taiwanese(GoogleTranslator(source=lang, target='zh-TW').translate(input))
 
