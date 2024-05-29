@@ -25,4 +25,4 @@ def handle_translate_request():
 
 if __name__ == '__main__':
     debug_mode = False if os.getenv('PRODUCTION') else True
-    app.run(debug=debug_mode)
+    app.run(host='0.0.0.0', port=int(os.getenv('PORT', 5000)), debug=debug_mode)

@@ -4,3 +4,4 @@ OpenCC
 flask
 flask_cors
 gunicorn
+python-dotenv
