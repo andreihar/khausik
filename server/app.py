@@ -1,5 +1,9 @@
 from flask import Flask, request
 from flask_cors import CORS
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 from main import translate
 
@@ -20,4 +24,5 @@ def handle_translate_request():
         return {"error": str(e)}, 500
 
 if __name__ == '__main__':
-	app.run(debug=True)
+    debug_mode = False if os.getenv('PRODUCTION') else True
+    app.run(debug=debug_mode)
