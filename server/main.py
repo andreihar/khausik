@@ -1,8 +1,5 @@
 import requests
 from deep_translator import GoogleTranslator
-import opencc
-
-converter = opencc.OpenCC('s2t.json')
 session = requests.Session()
 
 def translate(lang, input):
