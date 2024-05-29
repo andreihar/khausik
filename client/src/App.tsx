@@ -9,11 +9,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 const theme = {
-  primaryColor: 'red',
-  fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Noto Sans TC, Noto Sans SC, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji',
-  colors: {
-    'red': ['#FFEAEF', '#FBD4DA', '#F4A6B1', '#EE7587', '#E94D62', '#E7344C', '#E7273F', '#CC1A32', '#B7122B', '#A10323'] as const,
-  },
+  primaryColor: 'blue',
+  fontFamily: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Noto Sans TC, Noto Sans SC, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji'
 };
 
 export default function App() {

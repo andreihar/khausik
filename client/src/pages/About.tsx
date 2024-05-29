@@ -22,7 +22,7 @@ export default function About() {
   ];
   const features = MOCKDATA.map((feature) => (
     <Box key={feature.title}>
-      <ThemeIcon size={44} radius="md" variant="gradient" gradient={{ deg: 133, from: 'red', to: 'orange' }}>
+      <ThemeIcon size={44} radius="md" variant="gradient" gradient={{ deg: 133, from: 'blue', to: 'cyan' }}>
         <feature.icon style={{ width: rem(26), height: rem(26) }} stroke={1.5} />
       </ThemeIcon>
       <Text fz="xl" mt="sm" fw={500}>{feature.title}</Text>
@@ -37,12 +37,12 @@ export default function About() {
           <Title c='white' fz={{ base: '42', sm: '62' }} lh={{ base: '1.1', sm: '1.0' }} fw={900} m={0} p={0}>
             <Trans
               i18nKey="about.title"
-              components={[<Text component="span" variant="gradient" gradient={{ from: 'red', to: 'orange' }} inherit />]}
+              components={[<Text component="span" variant="gradient" gradient={{ from: 'blue', to: 'cyan' }} inherit />]}
             />
           </Title>
           <Text c='white' opacity={0.85} mt='xl' fz={{ 'base': 20, 'sm': 24 }}>{t('about.description')}</Text>
           <Group mt="xl">
-            <Button component="a" href="#features" size="xl" px={{ base: '18', sm: '38' }} h={54} flex={{ base: '1', sm: 'none' }} variant="gradient" gradient={{ from: 'red', to: 'orange' }}>
+            <Button component="a" href="#features" size="xl" px={{ base: '18', sm: '38' }} h={54} flex={{ base: '1', sm: 'none' }} variant="gradient" gradient={{ from: 'blue', to: 'cyan' }}>
               {t('about.features')}
             </Button>
             <Button component="a" href="https://github.com/andreihar/taibun" target="_blank" size="xl" variant="default" px={{ base: '18', sm: '38' }} h={54} flex={{ base: '1', sm: 'none' }} leftSection={<GithubIcon size={20} />}>

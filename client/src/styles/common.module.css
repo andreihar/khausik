@@ -64,8 +64,8 @@ html {
 .indicator {
 	background-image: linear-gradient(
 		to right,
-		var(--mantine-color-red-filled),
-		var(--mantine-color-orange-filled)
+		var(--mantine-color-blue-filled),
+		var(--mantine-color-cyan-filled)
 	);
 }
 .control {

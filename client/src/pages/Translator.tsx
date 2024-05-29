@@ -218,11 +218,11 @@ export default function Translator() {
                   </ActionIcon>}
               />
             </Grid.Col>
-            <Flex mt='lg' justify="center">
-              <Button radius="xl" size="md" styles={{ root: { height: rem(48), backgroundImage: 'linear-gradient(to right, var(--mantine-color-red-filled), var(--mantine-color-orange-filled))' } }}
-                onClick={handleTranslate} loading={loading}>{t('translator.translate')}</Button>
-            </Flex>
           </Grid>
+          <Flex mt='lg' justify="center">
+            <Button radius="xl" size="md" styles={{ root: { height: rem(48), backgroundImage: 'linear-gradient(to right, var(--mantine-color-blue-filled), var(--mantine-color-cyan-filled))' } }}
+              onClick={handleTranslate} loading={loading}>{t('translator.translate')}</Button>
+          </Flex>
         </Container>
       </Box>
     </>
